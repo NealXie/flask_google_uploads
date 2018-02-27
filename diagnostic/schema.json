@@ -1,0 +1,135 @@
+{
+	"fields": [
+		{
+			"name": "Brand",
+			"type": "string"
+		},
+		{
+			"name": "Date",
+			"type": "date",
+			"format": "%m/%d/%Y"
+		},
+		{
+			"name": "Campaign Start Date",
+			"type": "date",
+			"format": "%m/%d/%Y"
+		},
+		{
+			"name": "Campaign End Date",
+			"type": "date",
+			"format": "%m/%d/%Y"
+		},
+		{
+			"name": "Publisher",
+			"type": "string"
+		},
+		{
+			"name": "Campaign Name",
+			"type": "string"
+		},
+		{
+			"name": "DCM Campaign ID",
+			"type": "string"
+		},
+		{
+			"name": "Creative Name",
+			"type": "string"
+		},
+		{
+			"name": "Consumer Target (Age)",
+			"type": "string"
+		},
+		{
+			"name": "Consumer Target (Gender)",
+			"type": "string"
+		},
+		{
+			"name": "Consumer Target (Ethnicity)",
+			"type": "string"
+		},
+		{
+			"name": "Placement Name",
+			"type": "string"
+		},
+		{
+			"name": "DCM Placement ID",
+			"type": "string"
+		},
+		{
+			"name": "Placement Type",
+			"type": "string"
+		},
+		{
+			"name": "Unit Size",
+			"type": "string"
+		},
+		{
+			"name": "Planned Impressions",
+			"type": "integer"
+		},
+		{
+			"name": "Delivered Impressions",
+			"type": "integer"
+		},
+		{
+			"name": "Delivered Unique Impressions",
+			"type": "integer"
+		},
+		{
+			"name": "Frequency",
+			"type": "number"
+		},
+		{
+			"name": "Delivered Clicks",
+			"type": "integer"
+		},
+		{
+			"name": "CTR",
+			"type": "number"
+		},
+		{
+			"name": "% Viewable Impressions",
+			"type": "number"
+		},
+		{
+			"name": "Click to Play or Autoplay",
+			"type": "string"
+		},
+		{
+			"name": "Video Views - Total",
+			"type": "integer"
+		},
+		{
+			"name": "Video Views - First Quartile",
+			"type": "integer"
+		},
+		{
+			"name": "Video Views - Mid Quartile",
+			"type": "integer"
+		},
+		{
+			"name": "Video Views - Third Quartile",
+			"type": "integer"
+		},
+		{
+			"name": "Video Views - Completions",
+			"type": "integer"
+		},
+		{
+			"name": "VCR",
+			"type": "number"
+		},
+		{
+			"name": "Cost Method",
+			"type": "string"
+		},
+		{
+			"name": "Placement Rate",
+			"type": "number"
+		},
+		{
+			"name": "Delivered Spend",
+			"type": "number"
+		}
+	]
+}

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Neal File Upload App">
+    <meta name="author" content="Neal Xie">
+
+    <title>Neal File Upload App</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="static/dropzone.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="static/album.css" rel="stylesheet">
+  </head>
+
+  <body id="mybody">
+
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted">Upload on Cap Lite, then go take a nap.</p>
+              <p><a href="https://storage.googleapis.com/neallab/DTP_Template.xlsx" class="text-white">Download a Template</a> </p>
+              <p><a href="https://datastudio.google.com/open/12t0XFexhhmK6EqFN6wxnPoAGEhcFSSoj" target="_blank" class="text-white">Go to Dashboard</a> </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li class="text-white">Neal Xie</li>
+                <li class="text-white">Senior Analyst, Data Analytics</li>
+                <li><a href="#" class="text-white">Email me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <a href="/" class="navbar-brand d-flex align-items-center">
+            <i class="fa fa-file-text-o" aria-hidden="true" style="color:white"></i>
+            <strong>&nbsp;CAP Lite</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main" class="container">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Upload New File</h1>
+          <p class="lead text-muted">CAP Lite allow you to upload your DTP files here.</p>
+
+            <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data" class="dropzone dz-clickable">
+              <div class="dz-default dz-message">
+                <span class="lead text-muted" style="font-size:130%;">Drop files here or click to upload.</span>
+              </div>
+            </form>
+
+            <button class="btn btn-sm btn-outline-secondary btn-block reset" onclick="location.reload();">
+              <span>Reset</span>
+            </button>
+
+            <br/>
+            <table id="database" style="width:100%; font-size: 12px;" class="text-muted">
+              <thead>
+                <td>File Name</td>
+                <td>Upload Date</td>
+                <td></td>
+              </thead>
+              {% for item in items %}
+              <tr>
+                <td>{{ item[0] }}</td>
+                <td>{{ item[1] }}</td>
+              </tr>
+              {% endfor %}
+            </table>
+        </div>
+      </section>
+    </main>
+
+    <footer id="myfooter" class="text-muted">
+      <p><small> &copy; 2018 Amplifi Analytics Team </small></p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script>window.jQuery || document.write('<script src="static//assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="static/assets/js/vendor/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/assets/js/vendor/holder.min.js"></script>
+    <script src="static/album.js"></script>
+    <script src="static/dropzone.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+  </body>
+</html>

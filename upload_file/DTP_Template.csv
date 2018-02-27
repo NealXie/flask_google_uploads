@@ -1,0 +1,32 @@
+CAMPAIGN BACKGROUND,Brand,string
+,Date,date (%m/%d/%Y)
+,Campaign Start Date,date (%m/%d/%Y)
+,Campaign End Date,date (%m/%d/%Y)
+,Publisher,string
+,Campaign Name,string
+,DCM Campaign ID,string
+,Creative Name,string
+,Consumer Target (Age),string
+,Consumer Target (Gender),string
+,Consumer Target (Gender),string
+,Placement Name,string
+,DCM Placement ID,string
+,Placement Type,string
+,Unit Size,string
+REPORTING METRICS TO DATE,Planned Impressions,int
+,Delivered Impressions,int
+,Delivered Unique Impressions,int
+,Frequency,float
+,Delivered Clicks,int
+,CTR,float (not percentage)
+,% Viewable Impressions,float (not percentage)
+VIDEO METRICS TO DATE,Click to Play or Autoplay?,string
+,Video Views - Total,int
+,Video Views - First Quartile,int
+,Video Views - Mid Quartile,int
+,Video Views - Third Quartile,int
+,Video Views - Completions,int
+,VCR,float (not percentage)
+SPEND TO DATE,Cost Method,string
+,Placement Rate,float (not percentage)
+,Delivered Spend,float (not include $)
